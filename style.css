@@ -17,7 +17,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #E2C2FF;
+    background-color: #C0BFFF; /* Main purple color */
     padding: 15px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
@@ -42,13 +42,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #5E4B8B;
+    color: #9E99E6; /* Lighter purple for hover effect */
     transform: scale(1.1);
 }
 
 /* About Section */
 #about {
-    background-color: #E2C2FF;
+    background-color: #C0BFFF; /* Main purple color */
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -98,7 +98,7 @@ nav ul li a:hover {
 
 #skills h2 {
     font-size: 2.5rem;
-    color: #E2C2FF;
+    color: #C0BFFF; /* Main purple color */
     margin-bottom: 30px;
     animation: fadeIn 1s ease-out;
 }
@@ -111,7 +111,7 @@ nav ul li a:hover {
 }
 
 .skill {
-    background-color: #6B4D94;
+    background-color: #9E99E6; /* Lighter purple variant */
     color: white;
     padding: 15px 30px;
     border-radius: 25px;
@@ -123,7 +123,7 @@ nav ul li a:hover {
 
 .skill:hover {
     transform: scale(1.1);
-    background-color: #4C3C75;
+    background-color: #A28CC8; /* Even lighter purple for hover */
 }
 
 /* Projects Section */
@@ -135,7 +135,7 @@ nav ul li a:hover {
 
 #projects h2 {
     font-size: 2.5rem;
-    color: #E2C2FF;
+    color: #C0BFFF; /* Main purple color */
     margin-bottom: 40px;
     animation: fadeIn 1.5s ease-out;
 }
@@ -175,19 +175,19 @@ nav ul li a:hover {
 }
 
 .project a {
-    color: #E2C2FF;
+    color: #C0BFFF; /* Main purple color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .project a:hover {
-    color: #5E4B8B;
+    color: #9E99E6; /* Lighter purple for hover effect */
 }
 
 /* Contact Section */
 #contact {
-    background-color: #E2C2FF;
+    background-color: #C0BFFF; /* Main purple color */
     color: #fff;
     padding: 50px 20px;
     text-align: center;
@@ -207,14 +207,14 @@ nav ul li a:hover {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    background-color: #6B4D94;
+    background-color: #9E99E6; /* Lighter purple for buttons */
     padding: 10px 20px;
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
 #contact a:hover {
-    background-color: #4C3C75;
+    background-color: #A28CC8; /* Even lighter purple for hover */
 }
 
 /* Keyframe Animations */
