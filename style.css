@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +6,10 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f7fc;
+    background-color: #f5f5f5;
     color: #333;
-    font-size: 16px;
 }
 
 /* Navigation Styles */
@@ -18,7 +17,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #292b2c;
+    background-color: #D49EFF;
     padding: 15px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
@@ -35,54 +34,73 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff5722;
+    color: #5E4B8B;
     transform: scale(1.1);
-}
-
-/* Section Styling */
-section {
-    padding: 80px 20px;
-    margin-top: 60px; /* To offset the fixed nav */
 }
 
 /* About Section */
 #about {
-    background: linear-gradient(135deg, #ff5722, #ff9800);
+    background-color: #D49EFF;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
 }
 
 #about h1 {
     font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-out;
 }
 
 #about p {
     font-size: 1.2rem;
     margin-top: 10px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.image-container {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: scaleUp 2s ease-out;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Skills Section */
 #skills {
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     padding: 50px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 #skills h2 {
-    font-size: 2rem;
-    color: #ff5722;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #D49EFF;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out;
 }
 
 .skills-container {
@@ -93,31 +111,33 @@ section {
 }
 
 .skill {
-    background-color: #03a9f4;
+    background-color: #6B4D94;
     color: white;
     padding: 15px 30px;
-    border-radius: 8px;
+    border-radius: 25px;
     font-size: 1.2rem;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: fadeInUp 1.2s ease-out;
 }
 
 .skill:hover {
     transform: scale(1.1);
-    background-color: #0288d1;
+    background-color: #4C3C75;
 }
 
 /* Projects Section */
 #projects {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 50px 20px;
+    text-align: center;
 }
 
 #projects h2 {
-    font-size: 2rem;
-    color: #ff5722;
-    margin-bottom: 30px;
-    text-align: center;
+    font-size: 2.5rem;
+    color: #D49EFF;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .project-container {
@@ -128,18 +148,19 @@ section {
 }
 
 .project {
-    background-color: #fff;
+    background-color: #fafafa;
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 15px;
     width: 300px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 .project:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .project h3 {
@@ -154,26 +175,26 @@ section {
 }
 
 .project a {
-    color: #03a9f4;
+    color: #D49EFF;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .project a:hover {
-    color: #ff5722;
+    color: #5E4B8B;
 }
 
 /* Contact Section */
 #contact {
-    background-color: #ff5722;
+    background-color: #D49EFF;
     color: #fff;
     padding: 50px 20px;
     text-align: center;
 }
 
 #contact h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -186,28 +207,26 @@ section {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    background-color: #0288d1;
+    background-color: #6B4D94;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
 #contact a:hover {
-    background-color: #ff9800;
+    background-color: #4C3C75;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
     }
-
-    .project-container {
-        flex-direction: column;
-    }
-
-    .project {
-        width: 80%;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
+
+@keyframes fadeInUp {
